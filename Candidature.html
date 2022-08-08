@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="it">
+	<head>
+		<title>MysticLands - Candidature</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/candidature.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://kit.fontawesome.com/a1f6a7827b.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<link rel="icon" href="images/logo.png">
+		<script src="candidature.js"></script>
+	</head>
+	<body >
+
+		<!-- class="is-preload" oncontextmenu="return false" onselect="return false" ondragstart="return false" -->
+
+		<!-- Back to top button -->
+      <a id="buttontop"></a>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">MysticLands</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a style="cursor: pointer;" onClick="window.open('index.html', '_self')">Home</a></li>
+											<li><a style="cursor: pointer;" onClick="window.open('https://store.mysticlands.net/', '_blank')">Store</a></li>
+											<li><a style="cursor: pointer;" onClick="window.open('vota.html', '_self')" >Vota</a></li>
+											<li><a style="cursor: pointer;" onClick="window.open('regole.html', '_self')">Regolalmento</a></li>
+											<li><a style="cursor: pointer;" onClick="window.open('Candidature.html', '_self')">Candidature</a></li>
+											<li><a style="cursor: pointer;" onClick="window.open('bacheca.html', '_self')">Bacheca</a></li>
+											<li><a style="cursor: pointer;" onClick="window.open('staff.html', '_self')">Staff</a></li>
+											<li><a style="cursor: pointer;" onClick="window.open('social.html', '_self')">Social</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Candidature</h2>
+							<p>Qui puoi compilare la tua richiesta per entrare nello staff</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+									<div class="contenitore">
+										<p class="heading">CANDIDATURE MYSTICLANDS</p>
+							 	   <div class="regole">
+									   <label>
+										 <h4>Informazioni:</h4>
+										 <span class="placeholder">Discord Tag</span>
+										 <input maxlength=40 minlength="2" id="DsTag" type="text" required/>
+										 <span class="placeholder">Età (in numero)</span>
+										 <input maxlength=2 minlength="2" id="Eta" type="text" required/>
+										 <span class="placeholder">Tempo di gioco su Mysticlands</span>
+										 <input maxlength=10 minlength="2" id="PlayedTime" type="text" required/>
+										 <span class="placeholder">Modalità scelta</span>
+										 <input maxlength=10 minlength="2" id="Modalita" type="text" required/>
+										 <span class="placeholder">Ore di disponibilità</span>
+										 <input maxlength=6 minlength="2" id="TimeOnline" type="text" required/>
+										 <span class="placeholder">Altre staff experience</span>
+										 <input maxlength=100 minlength="2" id="StaffExp" type="text" required/>
+										 <br>
+										 <h4>Scrivi di seguito come ti comporteresti in queste situazioni:</h4>
+										 <span class="placeholder">Degli utenti ti rivolgono insulti</span>
+										 <input maxlength=150 minlength="2" id="InsultiStaff" type="text" required/>
+										 <span class="placeholder">Degli utenti fanno commenti razziali</span>
+										 <input maxlength=150 minlength="2" id="Razzismo" type="text" required/>
+										 <br>
+										 <h4>Parlaci di te:</h4>
+										 <span class="placeholder">Perchè vorresti fare parte dello staff</span>
+										 <input maxlength=150 minlength="2" id="WhyStaff" type="text" required/>
+										 <span class="placeholder">Cosa pensi ti differenzi da altri candidati</span>
+										 <input maxlength=100 minlength="2" id="OtherApplier" type="text" required/>
+										 <span class="placeholder">Scrivi la tua @ di telegram</span>
+										 <input maxlength=20 minlength="2" id="TelegramTag" type="text" required/>
+
+									   </label>
+										 <br>
+										 <button onclick="Send()" id="Send">Invia</button>
+										 <h3 id="MessageSent"></h3>
+										 <h3 id="MessageFailed"></h3>
+							 	   </div>
+									</div>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://t.me/MysticLandsChat" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+						<li><a href="https://discord.gg/p6At8NZ2" target="_blank" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+						<li><a href="http://tiktok.mysticlands.net" target="_blank" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
+						<li><a href="https://www.instagram.com/mysticlands_official/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="http://youtube.mysticlands.net" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+
+					</ul>
+					<ul class="copyright">
+						<li>&copy; MysticLands 2022 | Tutti i diritti sono riservati</li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/buttontop.js"></script>
+			<script src="candidature.js"></script>
+	</body>
+</html>
